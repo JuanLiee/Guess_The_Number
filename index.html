@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tebak Angka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Guess The Number</h1>
+    <p class="subtitle">Guess The number from 1 to 100</p>
+
+    <div class="stats">
+      <div class="card">
+        <span>❤️ Lives</span>
+        <strong id="lives">5</strong>
+      </div>
+      <div class="card">
+        <span>🏆 Score</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="card">
+        <span>📈 Best</span>
+        <strong id="bestScore">0</strong>
+      </div>
+    </div>
+
+    <div class="game-box">
+      <input
+        type="number"
+        id="guessInput"
+        placeholder="Enter Number"
+        min="1"
+        max="100"
+      />
+      <div class="buttons">
+        <button id="guessBtn">Guess</button>
+        <button id="restartBtn" class="secondary">Play Agin</button>
+      </div>
+
+      <p id="message">Game Started. Take a Guess!</p>
+      <p id="hint">Hint: None Hint</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
